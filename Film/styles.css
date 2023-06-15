@@ -1,22 +1,22 @@
 /* CSS styles for the image */
 body {
-  background-color: #212020; /* Set your desired background color */
+  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
 }
 img {
   width: 200px;
   height: 250px;
 }
 .image-container {
-  width: 900px; /* Adjust the width as desired */
-  height: 700px; /* Adjust the height as desired */
-  margin: 0 auto; /* Center the container horizontally */
+  width: 1300px; /* Adjust the width as desired */
+  height: 800px; /* Adjust the height as desired */
+  margin:  auto; /* Center the container horizontally */
   overflow: hidden; /* Hide any overflow from the image */
 }
 
 
 #myImage {
-  width: 900px; /* Adjust the width as desired */
-  height: 500px; /* Maintain the aspect ratio */
+  width: 1300px; /* Adjust the width as desired */
+  height: 800px; /* Maintain the aspect ratio */
   display: block; /* Ensure the image is centered horizontally */
   margin: 0 auto; /* Center the image horizontally */
   padding: 10px; /* Add 10 pixels of padding around the image */
