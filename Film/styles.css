@@ -1,6 +1,6 @@
 /* CSS styles for the image */
 body {
-  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+  background-image: linear-gradient(to right, #2c3e50, #4ca1af);
 }
 img {
   width: 200px;
