@@ -1,5 +1,5 @@
 // Store the image file names in an array
-var images = ['Images/Mission.jpg', 'Images/IndianaJones.jpg',
+var images = ['Images/Posters/ThereWill.jpg', 'Images/Posters/ScentofaWoman.jpg',
  'Images/Oppenheimer.jpg', 'Images/Dune22.jpg', 'Images/Flash.jpg'];
 var currentIndex = 0;
 var imgElement = document.getElementById('myImage');
