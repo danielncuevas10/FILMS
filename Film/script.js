@@ -1,6 +1,8 @@
 // Store the image file names in an array
-var images = ['Images/Posters/ThereWill.jpg', 'Images/Posters/ScentofaWoman.jpg',
- 'Images/Oppenheimer.jpg', 'Images/Dune22.jpg', 'Images/Flash.jpg'];
+var images = ['Images/Posters/ThereWill.jpg', 'Images/Posters/Goodfellas.jpg',
+ 'Images/Posters/list.jpg', 'Images/Posters/DarthVader.jpg', 
+ 'Images/Posters/michael.jpg', 
+ 'Images/Posters/Chinatown.jpg','Images/Posters/LOTR.jpg'];
 var currentIndex = 0;
 var imgElement = document.getElementById('myImage');
 
@@ -25,7 +27,7 @@ function changeImage() {
   }, 500); // Adjust the delay to match the CSS transition time
 }
 
-setInterval(changeImage, 2000);
+setInterval(changeImage, 4000);
 
 /* JavaScript to handle image expansion */
 
