@@ -1,0 +1,34 @@
+/* CSS styles for the image */
+body {
+  background-color: #22313f; /* Set your desired background color */
+}
+
+
+.image-container {
+  width: 800px; /* Adjust the width as desired */
+  height: 600px; /* Adjust the height as desired */
+  margin: 0 auto; /* Center the container horizontally */
+  overflow: hidden; /* Hide any overflow from the image */
+}
+
+
+#myImage {
+  width: 800px; /* Adjust the width as desired */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Ensure the image is centered horizontally */
+  margin: 0 auto; /* Center the image horizontally */
+  opacity: 1; /* Initial opacity */
+  transition: opacity 0.5s ease; /* Smooth transition effect */
+}
+
+  .w3-row-padding .w3-col .w3-display-container:hover img {
+    opacity: 0.7; /* Adjust the opacity value to change the effect */
+  }
+
+    .w3-row-padding .w3-col .w3-display-container img {
+    transition: transform 0.3s; /* Add smooth transition */
+  }
+  
+  .w3-row-padding .w3-col .w3-display-container img:hover {
+    transform: scale(1.1); /* Increase the scale value to make it bigger */
+  }

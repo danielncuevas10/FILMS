@@ -1,0 +1,40 @@
+/* CSS styles for the image */
+body {
+  background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+}
+img {
+  width: 200px;
+  height: 250px;
+}
+.image-container {
+  width: 1300px; /* Adjust the width as desired */
+  height: 800px; /* Adjust the height as desired */
+  margin:  auto; /* Center the container horizontally */
+  overflow: hidden; /* Hide any overflow from the image */
+}
+
+
+#myImage {
+  width: 1300px; /* Adjust the width as desired */
+  height: 800px; /* Maintain the aspect ratio */
+  display: block; /* Ensure the image is centered horizontally */
+  margin: 0 auto; /* Center the image horizontally */
+  padding: 10px; /* Add 10 pixels of padding around the image */
+  opacity: 1; /* Initial opacity */
+  transition: opacity 0.5s ease; /* Smooth transition effect */
+}
+
+
+  .w3-row-padding .w3-col .w3-display-container:hover img {
+    opacity: 0.7; /* Adjust the opacity value to change the effect */
+  }
+
+    .w3-row-padding .w3-col .w3-display-container img {
+    transition: transform 0.3s; /* Add smooth transition */
+  }
+  
+  .w3-row-padding .w3-col .w3-display-container img:hover {
+    transform: scale(1.1); /* Increase the scale value to make it bigger */
+  }
+
+  
