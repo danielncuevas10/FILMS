@@ -3,38 +3,69 @@ body {
   background-image: linear-gradient(to right, #2c3e50, #4ca1af);
 }
 img {
-  width: 200px;
-  height: 250px;
+  width: 100%;
+  height: auto;
 }
 .image-container {
-  width: 1300px; /* Adjust the width as desired */
-  height: 800px; /* Adjust the height as desired */
-  margin:  auto; /* Center the container horizontally */
-  overflow: hidden; /* Hide any overflow from the image */
+  max-width: 100%;
+  height: 800px; /* You can keep this fixed if you want, or use a percentage */
+  margin: auto;
+  overflow: hidden;
 }
-
 
 #myImage {
-  width: 1300px; /* Adjust the width as desired */
-  height: 800px; /* Maintain the aspect ratio */
-  display: block; /* Ensure the image is centered horizontally */
-  margin: 0 auto; /* Center the image horizontally */
-  padding: 10px; /* Add 10 pixels of padding around the image */
-  opacity: 1; /* Initial opacity */
-  transition: opacity 0.5s ease; /* Smooth transition effect */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* Add the transform property back to create the hover effect */
+.w3-row-padding .w3-col .w3-display-container img {
+  transition: transform 0.3s; /* Add smooth transition */
+}
+
+.w3-row-padding .w3-col .w3-display-container:hover img {
+  transform: scale(1.1); /* Increase the scale value to make it bigger */
+}
+
+/* Use flexbox to control navigation links on smaller screens */
+.w3-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.w3-bar-item {
+  padding: 10px;
+}
+
+/* Use flexbox or grid for project sections */
+.w3-row-padding {
+  display: flex; /* Or use "grid" if you prefer */
+  flex-wrap: wrap;
+  justify-content: space-between; /* Or any other alignment you prefer */
+}
+
+.w3-row-padding .w3-col img {
+  height: 200px; /* Set the desired height for the images */
+  object-fit: cover; /* This property ensures the images are scaled and cropped as needed */
 }
 
 
-  .w3-row-padding .w3-col .w3-display-container:hover img {
-    opacity: 0.7; /* Adjust the opacity value to change the effect */
+.w3-col {
+  flex-basis: calc(25% - 20px); /* Adjust the percentage based on the number of columns you want */
+  margin-bottom: 20px;
+}
+
+/* Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .image-container {
+    height: 500px; /* You can adjust the height for smaller screens */
   }
 
-    .w3-row-padding .w3-col .w3-display-container img {
-    transition: transform 0.3s; /* Add smooth transition */
-  }
-  
-  .w3-row-padding .w3-col .w3-display-container img:hover {
-    transform: scale(1.1); /* Increase the scale value to make it bigger */
-  }
-
-  
+  /* Add styles for smaller screens as needed */
+}
